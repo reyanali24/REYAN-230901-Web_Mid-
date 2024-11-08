@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanford-Like Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Navbar Styling */
+        .top-navbar,
+        .second-navbar {
+            width: 100%;
+            z-index: 10;
+            color: white;
+            background-color: rgb(161, 59, 28);
+            opacity: 0.5;
+        }
+
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            padding: 0.5rem;
+        }
+
+        .second-navbar {
+            position: fixed;
+            top: 50px;
+        }
+
+        .content {
+            padding-top: 120px;
+        }
+
+        .bg-fixed {
+            background-image: url("images/main_bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar top-navbar navbar-expand-lg fw-bolder">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Air University</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar"
+                aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center"id="topNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item fw-bolder"><a class="nav-link text-white" href="#">Information for:</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Students</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Families</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Visitors</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Alumni</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar second-navbar navbar-expand-lg fw-bolder">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondNavbar"
+                aria-controls="secondNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="secondNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Health Care</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Campus Life</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-fixed d-flex align-items-center justify-content-center vh-100">
+        <div class="container-fluid text-center">
+            <h1 class="display-4 fw-bolder">Air University</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid-md text-center my-4">
+        <div class="row text-center">
+            <h1 class="fw-bolder">A Societal Mission</h1>
+            <h4 class="fw-lighter my-3">Stanford was founded almost 150 years ago on a bedrock of societal purpose. Our
+                mission is to contribute to the
+                world by educating students for lives of leadership and contribution with integrity; advancing
+                fundamental
+                knowledge and cultivating creativity; leading in pioneering research for effective clinical therapies;
+                and
+                accelerating solutions and amplifying their impact.</h4>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Air uni</button>
+        </div>
+    </div>
+
+    <div class="container-fluid-md text-center mt-3">
+        <h1 class="fw-bolder">Campus News</h1>
+        <h4 class="fw-lighter my-3">Stories about people, research, and innovation across the Farm</h4>
+        <div class="container text-center">
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="card text-white overflow: hidden">
+                        <img src="images/new1.jpeg" class="card-img" style="height: 300px; overflow: hidden;" alt="#1">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Conference</h5>
+                            <p class="card-text">1st International Conference on Recent Trends in Statistics Data
+                                Analytics with applications in Natural Sciences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/J1.jpg" class="card-img-top" style="width: auto; height: auto;" alt="#2">
+                        <div class="card-body">
+                            <h5 class="card-title">Orientation</h5>
+                            <p class="card-text">Orientation Day Semester Fall 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/J3.jpg" class="card-img-top" style="width: auto; height: auto;" alt="#3">
+                        <div class="card-body">
+                            <h5 class="card-title">Induction Drive</h5>
+                            <p class="card-text">Huawei Blood Induction Drive 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-md-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/J4.jpeg" class="card-img-top" style="width: auto; height: auto;" alt="#2">
+                        <div class="card-body">
+                            <h5 class="card-title">Orientation</h5>
+                            <p class="card-text">Orientation Day Semester Fall 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/J2.jpg" class="card-img-top" style="width: auto; height: auto;" alt="#2">
+                        <div class="card-body">
+                            <h5 class="card-title">Orientation</h5>
+                            <p class="card-text">Orientation Day Semester Fall 2024</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card text-white overflow: hidden">
+                        <img src="images/new2.jpeg" class="card-img" style="height: 300px; overflow: hidden;" alt="#1">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Conference</h5>
+                            <p class="card-text">1st International Conference on Recent Trends in Statistics Data
+                                Analytics with applications in Natural Sciences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Campus News</button>
+        </div>
+    </div>
+
+    <div class="container-fluid-md text-center mt-5">
+        <h1 class="fw-bolder">Academics</h1>
+        <h4 class="fw-lighter my-3 pb-3">Preparing students to make meaningful contributions to <br> society as
+            engaged citizens and leaders in a complex world</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/new6.jpeg" class="card-img-top" style="width: auto; height: auto;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Undergraduate Education</h5>
+                        <p class="card-text">Rich learning experiences that provide a broad liberal arts foundation
+                            and deep subject-area expertise</p>
+                        <a href="#">Undergraduate Education</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/J1.jpg" class="card-img-top" style="width: auto; height: auto;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Graduate Education</h5>
+                        <p class="card-text">Rich learning experiences that provide a broad liberal arts foundation
+                            and deep subject-area expertise</p>
+                        <a href="#">Graduate Education</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/J3.jpg" class="card-img-top" style="width: auto; height: auto;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Driving Impact</h5>
+                        <p class="card-text">Rich learning experiences that provide a broad liberal arts foundation
+                            and deep subject-area expertise</p>
+                        <a href="#">Life-Long Learning</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="text-center mt-5">Six schools in which to pursue your passions</h3>
+            <div class="row row-cols-md-6 mt-3">
+                <div class="col"><a class="text-decoration-none" href="#">Medicine</a></div>
+                <div class="col"><a class="text-decoration-none" href="#">Law</a></div>
+                <div class="col"><a class="text-decoration-none" href="#">Humanities & Sciences</a></div>
+                <div class="col"><a class="text-decoration-none" href="#">Engineering</a></div>
+                <div class="col"><a class="text-decoration-none" href="#">Education</a></div>
+                <div class="col"><a class="text-decoration-none" href="#">Business</a></div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Academics</button>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center mt-4">
+        <p>“When I decided to become a mathematician, it was not a decision. I could not do otherwise. <br> You don’t
+            decide to fall in love with somebody. It just happens.”</p>
+        <img src="images/latest1.jpeg" style="width: 70%; height: 400px; border-radius: 5px;" alt="">
+        <h5><b>Tadashi Tokieda</b></h5>
+        <p>Professor (Teaching) of Mathematics</p>
+        <a href="#">More</a>
+    </div>
+
+    <div class="container-fluid-md text-center mt-5">
+        <h1 class="fw-bolder">Research</h1>
+        <h4 class="fw-lighter my-3 pb-3">Driving discoveries vital to our world, our health, and our intellectual life
+        </h4>
+        <hr>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="fw-bold">15 Institutes</h4>
+                    <p>cross disciplinary boundaries</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold">20 Libraries</h4>
+                    <p>hold over 12 million items</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold">$1.98 Billion</h4>
+                    <p>sponsored research budget</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Research</button>
+        </div>
+
+    </div>
+
+    <div class="container-fluid-md text-center mt-5">
+        <h1 class="fw-bolder">Upcoming Events</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card p-3 mb-5 border-0 border-bottom">
+                    <img src="images/J1.jpg" class="card-img-top" alt="i">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Nexus</h5>
+                        <p class="card-text">Air Nexus is one the most Hyped Event held in Air University</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 mb-5 border-0 border-bottom">
+                    <img src="images/nusrat.jpeg" class="card-img-top" alt="i">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Nexus</h5>
+                        <p class="card-text">Air Nexus is one the most Hyped Event held in Air University</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 mb-5 border-0 border-bottom">
+                    <img src="images/new3.jpeg" class="card-img-top" alt="i">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Nexus</h5>
+                        <p class="card-text">Air Nexus is one the most Hyped Event held in Air University</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 mb-5 border-0 border-bottom">
+                    <img src="images/new6.jpeg" class="card-img-top" alt="i">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Nexus</h5>
+                        <p class="card-text">Air Nexus is one the most Hyped Event held in Air University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More Events</button>
+        </div>
+    </div>
+
+    <div class="container-fluid-md text-center mt-5">
+        <h1 class="fw-bolder">Health & Care</h1>
+        <h4 class="fw-lighter my-3 pb-3">Advancing human health through innovative research, education, and care.</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/P1.jpeg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Medics</h5>
+                        <p class="card-text">Leading a worldwide revolution in precision health through
+                            biomedical research, education, and clinical enterprises</p>
+                        <a href="#">Air Medica</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/P2.jpeg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Air health care</h5>
+                        <p class="card-text">Leveraging expertise and advanced technology to deliver
+                            unparalleled care for each patient’s unique needs</p>
+                        <a href="#">Air health care</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/P4.jpg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Child Health Centre</h5>
+                        <p class="card-text">The only health care network in the Bay Area – and one of the few
+                            in the country – exclusively dedicated to pediatric and obstetric care</p>
+                        <a href="#">Air Child Health Centre</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Health Care</button>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center mt-4">
+        <p>“I think about all the projects that students throw themselves at quarter after quarter, just really
+            expanding and stretching their minds. … Stanford allows you to experience evolutions of yourself.”</p>
+        <img src="images/latest2.jpeg" style="width: 70%; height: 400px; border-radius: 5px;" alt="">
+        <h5><b>Yannie Tan</b></h5>
+        <p>Since 1951</p>
+        <a href="#">More</a>
+    </div>
+
+    <div class="container-fluid-md text-center mt-5">
+        <h1 class="fw-bolder">Campus Life</h1>
+        <h4 class="fw-lighter my-3 pb-3">Building a vibrant community of creative and accomplished people from around
+            the world.</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/new1.jpeg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Life</h5>
+                        <p class="card-text">A residential campus with diverse housing, exceptional dining, and
+                            over 600 student organizations.</p>
+                        <a href="#">Student Life</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/new2.jpeg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Recreation & Wellness</h5>
+                        <p class="card-text">State-of-the-art facilities and fitness programs to encourage
+                            movement and play.</p>
+                        <a href="#">Recreation & Wellness</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/J3.jpg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Arts & Culture</h5>
+                        <p class="card-text">A rich tradition of fostering creativity and a vibrant arts
+                            district on campus.</p>
+                        <a href="#">Arts & Cultures</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Campus Life</button>
+        </div>
+    </div>
+
+    <div class="container-fluid-md text-center mt-5">
+        <h1 class="fw-bolder">Athletics</h1>
+        <h4 class="fw-lighter my-3 pb-3">Providing student-athletes the opportunity to achieve excellence both in
+            competition and in the classroom.</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/nusrat.jpeg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Home of Champions</h5>
+                        <p class="card-text">Air’s 136 NCAA championships are the most for any university,
+                             and continued support from the
+                            campus community.</p>
+                        <a href="#">National Championship</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/web-1.png" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Olympic Excellence</h5>
+                        <p class="card-text">The Cardinal has produced at least one medalist in every Olympics in
+                            which the U.S. has competed since 1921, having a total of 300+ medals from 200 medalists.
+                        </p>
+                        <a href="#">Medals</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="images/web-3.jpeg" class="card-img-top" style="width: 400px; height: 300px;" alt="#2">
+                    <div class="card-body">
+                        <h5 class="card-title">Multidimensional Impact</h5>
+                        <p class="card-text">Air student-athletes have achieved local, national, and global
+                            impact through community involvement and advocacy.</p>
+                        <a href="#">Athlete Stories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Athletics</button>
+        </div>
+    </div>
+
+    <div class="container-fluid-md text-center mt-5">
+        <h1 class="fw-bolder">Admissions</h1>
+        <h4 class="fw-lighter my-3 pb-3">Offering extraordinary freedom to explore, to collaborate, and to challenge
+            yourself.</h4>
+        <div class="div justify-content-center">
+            <div class="col-md-12">
+                <img src="images/main_bg.jpg" class="width: 100%" alt="">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>Explore the possibilities of a Stanford education as you map out your college journey.</h3>
+                <p>We look for distinctive students who exhibit an abundance of energy and curiosity in their
+                    classes, activities, projects, research, and lives.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Stanford meets the full financial need of every admitted undergrad who qualifies for assistance.
+                </h3>
+                <p>More than two-thirds of undergrads receive some form of financial assistance. Generally, tuition
+                    is covered for families with incomes below $150,000.</p>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-danger mt-3">More About Admissions</button>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5"
+        style="height: 500px; background-image: url(images/office.png);background-position: center;">
+    </div>
+
+    <div class="row d-flex">
+        <div class="d-flex justify-content-end">
+            <a href="#"><img src="fb.png" alt="facebook" style="width: 30px; margin: 20px;"></a>
+            <a href="#"><img src="insta.png" alt="instagram" style="width: 30px; margin: 20px;"></a>
+            <a href="#"><img src="twitter.png" alt="twitter" style="width: 30px; margin: 20px;"></a>
+            <a href="#"><img src="whatsapp.png" alt="wa" style="width: 30px;margin: 20px;"></a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <p style="color:maroon"><b>Schools</b></p>
+                <p>Business</p>
+                <p>Education</p>
+                <p>Engineering</p>
+                <p>Humanities & Sciences</p>
+                <p>Law</p>
+                <p>Medicine</p>
+                <p>Sustainability</p>
+            </div>
+            <div class="col-md-2">
+                <p style="color: maroon"><b>Academics</b></p>
+                <p>Undergrad Majors</p>
+                <p>Graduate Programs</p>
+                <p style="color: maroon"><b>Research</b></p>
+                <p>Research centres A-Z</p>
+                <p>Libraries</p>
+            </div>
+            <div class="col-md-2">
+                <p style="color: maroon"><b>Health Care</b></p>
+                <p>Stanford Health Care</p>
+                <p>Stanford Children's Health</p>
+                <p style="color: maroon"><b>Online Learning</b></p>
+                <p>Stanford Online</p>
+
+            </div>
+            <div class="col-md-2">
+                <p style="color: maroon"><b>About Air</b></p>
+                <p>Facts</p>
+                <p>History</p>
+                <p>Accreditation</p>
+                <p style="color: maroon"><b>Admission</b></p>
+                <p>Undergraduate</p>
+                <p>Graduate</p>
+                <p>Financial Aid</p>
+            </div>
+            <div class="col-md-2">
+                <p style="color: maroon"><b>Resources</b></p>
+                <p>Campus Map</p>
+                <p>Community Engagement</p>
+                <p>Directory</p>
+                <p>Stanford Profiles</p>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-danger m-2 rounded-0" style="width: 100%;">Applying</button>
+                <button type="button" class="btn btn-outline-danger m-2 rounded-0" style="width: 100%;">Visiting</button>
+                <button type="button" class="btn btn-outline-danger m-2 rounded-0" style="width: 100%;">Giving</button>
+                <button type="button" class="btn btn-outline-danger m-2 rounded-0" style="width: 100%;">Careers</button>
+                <button type="button" class="btn btn-outline-danger m-2 rounded-0" style="width: 100%;">Faculty Positions</button>
+                <button type="button" class="btn btn-outline-danger m-2 rounded-0" style="width: 100%;">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: maroon">
+        <h5 style="color: white;" class="text-center">All rights Reserved&copy;</h5>
+    </div>
+
+</body>
+
+</html>
